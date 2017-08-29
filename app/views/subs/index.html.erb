@@ -1,0 +1,8 @@
+Subs!
+
+
+<%= link_to 'Create Sub', new_sub_url  %>
+<% Sub.all.each do |sub| %>
+<br>
+<%= link_to sub.title, sub_url(sub) %>
+<% end %>

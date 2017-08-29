@@ -1,0 +1,16 @@
+<form action= <%= sub_post_url %> method="post">
+<input type="hidden" name="_method" value="patch">
+<label>Title
+  <input type="text" name="post[title]" value= <%= @post.title %>>
+</label>
+<label>URL
+  <input type="text" name="post[url]" value=<%= @post.url %> >
+</label>
+<label>Content
+  <input type="text" name="post[content]" value= <%= @post.content %> >
+</label>
+<input type="submit" name="" value="Save Changes">
+
+</form>
+
+<%= render "nav" %>

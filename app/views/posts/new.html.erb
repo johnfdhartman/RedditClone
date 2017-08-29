@@ -1,0 +1,14 @@
+<h1>New Post</h1>
+<form action=<%= sub_posts_url %> method="post">
+  <label>Title
+    <input type="text" name="post[title]" value="">
+  </label>
+  <label>URL
+    <input type="text" name="post[url]" value="">
+  </label>
+  <label>Content
+    <input type="text" name="post[content]" value="">
+  </label>
+
+  <input type="submit" value="Create New Post">
+</form>

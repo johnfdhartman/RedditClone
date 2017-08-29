@@ -1,0 +1,12 @@
+<h1>Post</h1>
+<%= @post.title %>
+  <br>
+<%= @post.url%>
+  <br>
+<%= @post.content%>
+  <br>
+<%= @post.author.username%>
+  <br>
+<%= @post.sub.title %>
+  <br>
+<%= button_to 'Edit Post', edit_sub_post_url(@post.sub, @post), method: 'get' if @post.author_id == current_user.id%>
